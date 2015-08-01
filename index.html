@@ -9,7 +9,7 @@
 //display messages
 		displayMessage();	   	
 		}
-		console.log(geemails.length);
+//		console.log(geemails.length);
 		
 		countMsg = function()
 		{
@@ -57,13 +57,14 @@
 var children = document.getElementsByClassName('msgHide');
 
 for (var i = 0; i < children.length; i++) {
-    children[i].addEventListener('click',showSecretToy); 
+    var selected = children[i].addEventListener('click',hideMessage);
+    alert(selected);
 }
 
-function showSecretToy (event) {
+function hideMessage (event) {
     // code goes here
     //return children[i].style.display="none";
-    alert(children[i]);
+    //console.log("hi");
 }
 
 }
